@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    
+    int sum = 0;
+    
+    // Extract and sum each digit
+    sum += n % 10;        // units digit
+    n /= 10;
+    sum += n % 10;        // tens digit
+    n /= 10;
+    sum += n % 10;        // hundreds digit
+    n /= 10;
+    sum += n % 10;        // thousands digit
+    n /= 10;
+    sum += n;             // ten-thousands digit (last remaining digit)
+    
+    printf("%d\n", sum);
+    return 0;
+}

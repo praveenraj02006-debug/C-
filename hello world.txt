@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main() {
+    char s[1000];
+    
+    // Read the entire line of input
+    fgets(s, sizeof(s), stdin);
+    
+    // Print "Hello, World!" on first line
+    printf("Hello, World!\n");
+    
+    // Print the input string on the next line
+    printf("%s", s);
+    
+    return 0;
+}
